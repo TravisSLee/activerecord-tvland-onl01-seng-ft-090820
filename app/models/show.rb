@@ -4,6 +4,6 @@ class Show < ActiveRecord::Base
   
   def actors_list
     self.characters.map do |c|
-      ""
+      "#{c.actor.name}"
   end
 end
